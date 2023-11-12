@@ -1,17 +1,4 @@
-# Terraform settings Block
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
-  }
-}
 
-# Provider block
-provider "aws" {
-  profile = "default" # AWS Credentials profile configured on local desktop terminal
-  region  = "eu-north-1"
-}
 
 # Resource block
 resource "aws_instance" "ec2test" {
